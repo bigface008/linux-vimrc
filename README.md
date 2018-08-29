@@ -1,7 +1,8 @@
 # WinVimrc - vimrc on windows
 本项目试图实现一份快速、轻量、编辑体验完美、**普通**的Linux下的Vim配置。项目包
 含在Linux下正常工作的vim配置文件和相应的颜色主题文件、字体文件，目前考虑支持的
-语言有C、JS、markdown。（毕竟似乎只用得到这些语言）本项目是()[]项目的Linux版。
+语言有C、JS、markdown。（毕竟似乎只用得到这些语言）本项目是
+(win-vimrc)[https://github.com/bigface008/win-vimrc]项目的Linux版。
 很可能无法同步更新。目前尚无妥善结局的办法。
 
 ## Installation
