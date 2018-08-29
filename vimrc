@@ -7,4 +7,5 @@
 
 source $HOME/.vim/config/basic.vim
 source $HOME/.vim/config/ui.vim
+source $HOME/.vim/config/keybinding.vim
 source $HOME/.vim/config/plugin.vim

@@ -29,6 +29,7 @@ map <leader>n :NERDTreeToggle<CR> " Shortcut for open nerdtree
 " Ctrlp
 let g:ctrlp_map='<c-p>'      " Open file with <c-p>
 let g:ctrlp_cmd='CtrlP'
+" nmap <Leader>b :CtrlPBuffer<CR>
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.ttf  " Windows
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
@@ -58,7 +59,8 @@ let g:indentLine_leadingSpaceChar='·'
 " let g:neocomplete#sources#syntax#min_keyword_length = 3
 
 " Tagbar
-let g:tagbar_ctags_bin='D:\program\ctags\ctags.exe'
+let g:tagbar_ctags_bin='ctags'
+let g:tagbar_sort=0
 map <leader>t :TagbarToggle<CR>
 
 " NerdCommenter
@@ -73,7 +75,7 @@ let g:EasyMotion_smartcase = 1 " Smart case
 nmap <leader><leader>w <Plug>(easymotion-bd-w)
 nmap <leader><leader>e <Plug>(easymotion-bd-e)
 " map fh <Plug>(easymotion-linebackward)
-" map fj <Plug>(easymotion-j)
-" map fk <Plug>(easymotion-k)
+map <leader><leader>j <Plug>(easymotion-j)
+map <leader><leader>k <Plug>(easymotion-k)
 " map fl <Plug>(easymotion-lineforward)
 " map f. <Plug>(easymotion-repeat)
