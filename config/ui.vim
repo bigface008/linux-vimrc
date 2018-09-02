@@ -1,8 +1,8 @@
 " UI
 set nu                       " Show line number
 set ruler                    " Set ruler
-" set background=dark        " Set background
-colorscheme molokai          " Set theme
+set background=dark          " Set background
+colorscheme gruvbox          " Set theme
 set cursorline               " Show line cursor
 set cursorcolumn             " Show column cursor
 set cc=80                    " Hightlight column 80
