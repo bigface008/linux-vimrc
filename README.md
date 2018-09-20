@@ -3,13 +3,13 @@
 含在Linux下正常工作的vim配置文件和相应的颜色主题文件、字体文件，目前考虑支持的
 语言有C、JS、markdown。（毕竟似乎只用得到这些语言）本项目是
 [win-vimrc](https://github.com/bigface008/win-vimrc)项目的Linux版。
-很可能无法同步更新。目前尚无妥善结局的办法。
+很可能无法同步更新。目前尚无妥善解决的办法。
 
 ## Installation
 1. 克隆本项目。
 2. 手动在$HOME/.vim路径下创建files/backup，files/undo，files/swap文件夹。
 3. 安装fonts中的字体。
-4. 把themes中的主题放到$HOME/.vim/color中。
+4. 使用`PlugInstall`命令来安装所有插件（主题颜色已经包括其中）。
 
 ## Features
 1. C、JS的代码高亮和补全、语法提示、搜索替换和跳转。

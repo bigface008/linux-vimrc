@@ -1,29 +1,30 @@
 " Basic
-syntax enable                " Enable syntax check
-syntax on                    " Enable syntax highlighting
-filetype on                  " Enable filetype check
-filetype plugin indent on    " Load plugins according to detected filetype
-set nocompatible             " Not compatible with Vi
-set vb t_vb=                 " Stop bell
-set nowrap                   " Display auto new line
-set laststatus=2             " Always show statusline
-set display=lastline         " Show as much as possible of the last line
-set showmatch                " Show match bracket
-" set showmode               " Show current mode in command-line
-set noshowmode               " No mode in command-line
-set showcmd                  " Show already typed keys when more are expected
-set hlsearch                 " Hightlight the search
-set incsearch                " Move to fit position after each char input
-set hidden                   " Swith between buffers without saving first
-set clipboard=unnamed        " Use system clipboard
-set backspace=indent,eol,start " Better backspace
-set ttyfast                  " Fast redrawing
-set lazyredraw               " Only redraw when necessary
-" set novisualbell           " Something wrong
-" set paste                  " Keep format when pasting, something wrong
-set ignorecase               " Ignore case when searching
-set autoread                 " Auto read file when changed
-set updatetime=100           " Set updatetime
+syntax enable                " Enable syntax check.
+syntax on                    " Enable syntax highlighting.
+filetype on                  " Enable filetype check.
+filetype plugin indent on    " Load plugins according to detected filetype.
+set nocompatible             " Not compatible with Vi.
+set vb t_vb=                 " Stop bell.
+set nowrap                   " Display auto new line.
+set laststatus=2             " Always show statusline.
+set display=lastline         " Show as much as possible of the last line.
+set showmatch                " Show match bracket.
+" set showmode               " Show current mode in command-line.
+set noshowmode               " No mode in command-line.
+set showcmd                  " Show already typed keys when more are expected.
+set hlsearch                 " Hightlight the search.
+set incsearch                " Move to fit position after each char input.
+set hidden                   " Swith between buffers without saving first.
+set clipboard=unnamed        " Use system clipboard.
+set backspace=indent,eol,start " Better backspace.
+set ttyfast                  " Fast redrawing.
+set lazyredraw               " Only redraw when necessary.
+" set novisualbell           " Something wrong.
+" set paste                  " Keep format when pasting, something wrong.
+set ignorecase               " Ignore case when searching.
+set autoread                 " Auto read file when changed.
+set updatetime=100           " Set updatetime.
+set mouse=a                  " Enable mouse.
 
 " Backup settings
 " set nowritebackup          " No writeback when save file
