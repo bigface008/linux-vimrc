@@ -1,9 +1,15 @@
 # LinuxVimrc - vimrc on linux
-本项目试图实现一份快速、轻量、编辑体验完美、**普通**的Linux下的Vim配置。项目包
+本项目试图折腾、实现一份快速、轻量、编辑体验完美、**普通**的Linux下的Vim配置。项目包
 含在Linux下正常工作的vim配置文件和相应的颜色主题文件、字体文件，目前考虑支持的
 语言有C、JS、markdown。（毕竟似乎只用得到这些语言）本项目是
 [win-vimrc](https://github.com/bigface008/win-vimrc)项目的Linux版。
-很可能无法同步更新。目前尚无妥善解决的办法。
+
+## Problem
+- 目前，由于个人技术水平的限制，无法同步更新。~~目前尚无妥善解决的办法。~~ 由于
+本人安装Windows系统的电脑空间不足，无法安装用于编译YouCompleteMe的VS2017（另外又
+不会捣鼓别人编译好的版本），造成了不得不使用Neocomplete\Deoplete的状况。但是，在
+Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
+这使得Windows和Linux需要使用完全不同的补全
 
 ## Installation
 1. 克隆本项目。
