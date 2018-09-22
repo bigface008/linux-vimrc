@@ -16,7 +16,7 @@ set cc=80                    " Hightlight column 80.
 " set guifont=Fira\ Code\ Regular\ 11
 " set guifont=Fantasque\ Sans\ Mono\ 11
 " set guifont=Consolas:h12
-set guifont=Monospace\ 9
+set guifont=Monospace\ 11
 
 " Set cursor type.
 " set gcr=a:block-blinkon0   " No flashing cursor.

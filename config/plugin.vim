@@ -39,7 +39,7 @@ map <Leader><leader>n :NERDTreeToggle<CR> " Shortcut for open nerdtree
 let g:ctrlp_map='<c-p>'      " Open file with <c-p>
 let g:ctrlp_cmd='CtrlP'
 " nmap <Leader>b :CtrlPBuffer<CR>
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.ttf,*.o  " Linux.
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.ttf,*.o,*.out  " Linux.
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
