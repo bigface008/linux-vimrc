@@ -15,8 +15,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/indentLine'
 " UI Themes
-Plug 'joshdick/onedark.vim'
-Plug 'tomasiser/vim-code-dark'
 Plug 'chriskempson/base16-vim'
 " Complete
 Plug 'valloric/youcompleteme'

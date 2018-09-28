@@ -6,17 +6,17 @@ colorscheme base16-default-dark " Set theme.
 let base16colorspace=256
 set termguicolors
 set cursorline               " Show line cursor.
-" set cursorcolumn           " Show column cursor.
+set cursorcolumn             " Show column cursor.
 set cc=80                    " Hightlight column 80.
 
 " Set font type.
 " set guifont=Source_Code_Variable:h11:b:cDEFAULT
 " set guifont=Source\ Code\ Variable\ 11
 " set guifont=Courier_new:h11:b:cDEFAULT
-" set guifont=Fira\ Code\ Regular\ 11
+set guifont=Fira\ Code\ Regular\ 11
 " set guifont=Fantasque\ Sans\ Mono\ 11
 " set guifont=Consolas:h12
-set guifont=Monospace\ 11
+" set guifont=Monospace\ 11
 
 " Set cursor type.
 " set gcr=a:block-blinkon0   " No flashing cursor.
