@@ -34,6 +34,11 @@ function! ToggleFullscreen()
     endif
     call system("wmctrl -ir " . v:windowid . " -b " . mod . ",fullscreen")
 endfunction
+autocmd GUIEnter * call ToggleFullscreen()
 noremap <F11> :call ToggleFullscreen()<Enter>
 
-
+" Change font size with shortcurt keys. No satisfying.
+" command! Bigger  :let &guifont = substitute(&guifont, '\d\+$', '\=submatch(0)+1', '')
+" command! Smaller :let &guifont = substitute(&guifont, '\d\+$', '\=submatch(0)-1', '')
+" noremap <C-+> :Bigger<Enter>
+" noremap <C--> :Smaller<Enter>
