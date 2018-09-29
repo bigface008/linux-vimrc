@@ -16,6 +16,7 @@ Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/indentLine'
 " UI Themes
 Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 " Complete
 Plug 'valloric/youcompleteme'
 " Plug 'shougo/neocomplete.vim'
@@ -40,10 +41,10 @@ let g:ctrlp_cmd='CtrlP'
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.ttf,*.o,*.out  " Linux.
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+            \ 'file': '\v\.(exe|so|dll)$',
+            \ 'link': 'some_bad_symbolic_links',
+            \ }
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 " if executable('D:\program\ag\ag.exe')
 "   " Use Ag over Grep
@@ -65,24 +66,24 @@ let g:indentLine_leadingSpaceChar='·'
 " let g:neocomplete#enable_smart_case = 1 " Smart case
 " let g:neocomplete#sources#syntax#min_keyword_length = 3 " Keyword length.
 " let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
-" 
+"
 " " Define dictionary.
 " let g:neocomplete#sources#dictionary#dictionaries = {
 "     \ 'default' : '',
 "     \ 'vimshell' : $HOME.'/.vimshell_hist',
 "     \ 'scheme' : $HOME.'/.gosh_completions'
 "         \ }
-" 
+"
 " " Define keyword.
 " if !exists('g:neocomplete#keyword_patterns')
 "     let g:neocomplete#keyword_patterns = {}
 " endif
 " let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-" 
+"
 " " Plugin key-mappings.
 " inoremap <expr><C-g>     neocomplete#undo_completion()
 " inoremap <expr><C-l>     neocomplete#complete_common_string()
-" 
+"
 " " Recommended key-mappings.
 " " <CR>: close popup and save indent.
 " inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
@@ -98,23 +99,23 @@ let g:indentLine_leadingSpaceChar='·'
 " inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " " Close popup by <Space>.
 " "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
-" 
+"
 " " AutoComplPop like behavior.
 " "let g:neocomplete#enable_auto_select = 1
-" 
+"
 " " Shell like behavior(not recommended).
 " "set completeopt+=longest
 " "let g:neocomplete#enable_auto_select = 1
 " "let g:neocomplete#disable_auto_complete = 1
 " "inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-" 
+"
 " " Enable omni completion.
 " autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 " autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 " autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 " autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-" 
+"
 " " Enable heavy omni completion.
 " if !exists('g:neocomplete#sources#omni#input_patterns')
 "   let g:neocomplete#sources#omni#input_patterns = {}
@@ -122,7 +123,7 @@ let g:indentLine_leadingSpaceChar='·'
 " "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 " "let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 " "let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-" 
+"
 " " For perlomni.vim setting.
 " " https://github.com/c9s/perlomni.vim
 " let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
