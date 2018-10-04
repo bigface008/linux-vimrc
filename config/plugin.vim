@@ -19,9 +19,12 @@ Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
 " Complete
 Plug 'valloric/youcompleteme'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 " Plug 'shougo/neocomplete.vim'
 " Git
 Plug 'airblade/vim-gitgutter'
+" Other
+Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 
 " Airline -------------------------------------------------------------------- "
@@ -60,6 +63,23 @@ let g:indentLine_enabled=1   " Settings for indentLine
 let g:indentLine_char='|'
 let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar='·'
+
+" YouCompleteMe -------------------------------------------------------------- "
+let g:ycm_server_python_interpreter='/usr/bin/python2.7'
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_confirm_extra_conf=1
+let g:ycm_extra_conf_globlist=['~/workspace/*', '!~/*']
+let g:ycm_filepath_completion_use_working_dir=1
+" let g:ycm_global_ycm_extra_conf='~/.vim/source/'
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_add_preview_to_completeopt=1
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_filetype_blacklist={
+            \ 'markdown' : 1,
+            \ 'text' : 1,
+            \ 'tagbar' : 1,
+            \ 'infolog' : 1,
+            \}
 
 " Neocomplete ---------------------------------------------------------------- "
 " let g:neocomplete#enable_at_startup = 1 " Start at startup of vim.
