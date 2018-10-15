@@ -33,40 +33,30 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 
 ## Plugins List
 ### [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-[vim-plug](https://github.com/junegunn/vim-plug)
 安装vim-plug命令
 
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-### vim-airline/vim-airline
-[airline](https://github.com/vim-airline/vim-airline)
-### tomasiser/vim-code-dark
-[vim-code-dark](https://github.com/tomasiser/vim-code-dark)
-### scrooloose/nerdtree
-[nerdtree](https://github.com/scrooloose/nerdtree)
+### [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
+### [tomasiser/vim-code-dark](https://github.com/tomasiser/vim-code-dark)
+### [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+### [Yggdroot/LeaderF](https://github.com/Yggdroot/LeaderF)
+目前使用LeaderF来进行函数跳转、文件快速打开等工作。
 ### junegunn/fzf.vim
 [fzf](https://github.com/junegunn/fzf)
 [fzf.vim](https://github.com/junegunn/fzf.vim)
-### shougo/neocomplete.vim
-[neocomplete](https://github.com/Shougo/neocomplete.vim)
-### Yggdroot/indentLine
-[indentLine](https://github.com/Yggdroot/indentLine)
-### ctrlpvim/ctrlp.vim
-[ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
-目前启用了[ag](https://github.com/ggreer/the_silver_searcher)来优化ctrlp打开速度。
-
-    sudo apt-get install silversearcher-ag
-### majutsushi/tagbar
-[tagbar](https://github.com/majutsushi/tagbar)
-### terryma/vim-multiple-cursors
-[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
-### tpope/vim-surround
-[vim-surround](https://github.com/tpope/vim-surround)
-### scrooloose/nerdcommenter
-[nerdcommenter](https://github.com/scrooloose/nerdcommenter)
-### jiangmiao/auto-pairs
-[auto-pairs](https://github.com/jiangmiao/auto-pairs)
-### airblade/vim-gitgutter
-[vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-### easymotion/vim-easymotion
-[vim-easymotion](https://github.com/easymotion/vim-easymotion)
+~~目前把ag作为默认命令，来排除.gitignore中的文件。但是尚未找到适合的搜索隐藏文件的方
+法。~~
+### [shougo/neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
+### [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
+目前尚不清楚如何让标识在行高亮情况下正常显示。
+### [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
+~~目前启用了[ag](https://github.com/ggreer/the_silver_searcher)来优化ctrlp打开速
+度。~~目前已经弃用。由fzf代替。
+### [majutsushi/tagbar](https://github.com/majutsushi/tagbar)
+### [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+### [tpope/vim-surround](https://github.com/tpope/vim-surround)
+### [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
+### [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
+### [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+### [easymotion/vim-easymotion](https://github.com/easymotion/vim-easymotion)
