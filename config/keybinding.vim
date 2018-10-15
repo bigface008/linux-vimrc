@@ -19,8 +19,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Move faster between tabs.
-noremap <C-Tab> :bn<Enter>
-noremap <C-S-Tab> :bp<Enter>
+noremap <M-f> :bn<Enter>
+noremap <M-b> :bp<Enter>
 
 " Fullscreen function binding. Only can be used when wmctrl is installed.
 let g:fullscreen = 0
@@ -34,7 +34,7 @@ function! ToggleFullscreen()
     endif
     call system("wmctrl -ir " . v:windowid . " -b " . mod . ",fullscreen")
 endfunction
-autocmd GUIEnter * call ToggleFullscreen()
+" autocmd GUIEnter * call ToggleFullscreen()
 noremap <F11> :call ToggleFullscreen()<Enter>
 
 " Change font size with shortcurt keys. No satisfying.

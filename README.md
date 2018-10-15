@@ -1,9 +1,9 @@
 # LinuxVimrc - vimrc on linux
 > 生命不息，折腾不止。
 
-本项目试图折腾、实现一份快速、轻量、编辑体验完美、**普通**的Linux下的Vim配置。项目包
-含在Linux下正常工作的vim配置文件和相应的颜色主题文件、字体文件，目前考虑支持的
-语言有C、JS、markdown。（毕竟本菜鸟似乎只用得到这些语言）本项目是
+本项目试图折腾、实现一份快速、轻量、编辑体验完美、**普通**的Linux下的Vim配置。项
+目包含在Linux下正常工作的vim配置文件和相应的颜色主题文件、字体文件，目前考虑支持
+的语言有C、JS、markdown。（毕竟本菜鸟似乎只用得到这些语言）本项目是
 [win-vimrc](https://github.com/bigface008/win-vimrc)项目的Linux版。
 
 ## Problem
@@ -32,7 +32,7 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 [YouCompleteMe Linux安装手记](./docs/youcompleteme-linux-installation-note.md)
 
 ## Plugins List
-### junegunn/vim-plug
+### [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 [vim-plug](https://github.com/junegunn/vim-plug)
 安装vim-plug命令
 
@@ -53,6 +53,9 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 [indentLine](https://github.com/Yggdroot/indentLine)
 ### ctrlpvim/ctrlp.vim
 [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+目前启用了[ag](https://github.com/ggreer/the_silver_searcher)来优化ctrlp打开速度。
+
+    sudo apt-get install silversearcher-ag
 ### majutsushi/tagbar
 [tagbar](https://github.com/majutsushi/tagbar)
 ### terryma/vim-multiple-cursors

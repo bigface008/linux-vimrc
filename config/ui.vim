@@ -1,12 +1,13 @@
 " UI
 set nu                       " Show line number.
+" set relativenumber         " Set relative line number.
 set ruler                    " Set ruler.
-set background=dark          " Set background.
-colorscheme gruvbox " Set theme.
+" set background=light       " Set background.
+colorscheme molokai          " Set theme.
 let base16colorspace=256
 set termguicolors
 set cursorline               " Show line cursor.
-set cursorcolumn             " Show column cursor.
+" set cursorcolumn           " Show column cursor.
 set cc=80                    " Hightlight column 80.
 
 " Set font type.
@@ -16,7 +17,7 @@ set cc=80                    " Hightlight column 80.
 " set guifont=Fira\ Code\ Regular\ 9
 " set guifont=Fantasque\ Sans\ Mono\ 11
 " set guifont=Consolas:h12
-set guifont=Monospace\ 11
+set guifont=Monospace\ 9
 
 " Set cursor type.
 " set gcr=a:block-blinkon0   " No flashing cursor.

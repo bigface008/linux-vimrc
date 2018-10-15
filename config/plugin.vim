@@ -1,8 +1,6 @@
 " Plugin
 call plug#begin('~/.vim/plugged')
 " Basic
-" Plug 'junegunn/fzf.vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
 " Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
@@ -17,10 +15,15 @@ Plug 'Yggdroot/indentLine'
 " UI Themes
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
+Plug 'jnurmine/zenburn'
 " Complete
 Plug 'valloric/youcompleteme'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 " Plug 'shougo/neocomplete.vim'
+" Quick search
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 " Git
 Plug 'airblade/vim-gitgutter'
 " Other
@@ -28,7 +31,7 @@ Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 
 " Airline -------------------------------------------------------------------- "
-let g:airline_theme='base16' " Theme of airline
+" let g:airline_theme='base16' " Theme of airline
 let g:airline#extensions#tabline#enabled=1 " Enable bufferline.
 
 " NerdTree ------------------------------------------------------------------- "
@@ -49,14 +52,14 @@ let g:ctrlp_custom_ignore = {
             \ 'link': 'some_bad_symbolic_links',
             \ }
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-" if executable('D:\program\ag\ag.exe')
-"   " Use Ag over Grep
-"   set grepprg=ag\ --nogroup\ --nocolor
-"   " Use ag in CtrlP for listing files.
-"   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-"   " Ag is fast enough that CtrlP doesn't need to cache
-"   let g:ctrlp_use_caching = 0
-" endif
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+  " Use ag in CtrlP for listing files.
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  " Ag is fast enough that CtrlP doesn't need to cache
+  " let g:ctrlp_use_caching = 0
+endif
 
 " IndentLine ----------------------------------------------------------------- "
 let g:indentLine_enabled=1   " Settings for indentLine
@@ -169,3 +172,6 @@ map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
 " map fl <Plug>(easymotion-lineforward)
 " map f. <Plug>(easymotion-repeat)
+
+" fzf ------------------------------------------------------------------------ "
+" noremap <C-p> :Files<Enter>
