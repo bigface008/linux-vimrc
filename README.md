@@ -56,8 +56,7 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 - [ag](https://github.com/ggreer/the_silver_searcher)
 - [tagbar](https://github.com/majutsushi/tagbar)
 ### Auto Complete
-目前仍然在艰难地尝试补全。
-
+目前貌似是把C和C++的补全整好了一部分。
 - [youcompleteme](https://github.com/valloric/youcompleteme)
 - [YCM-Generator](https://github.com/rdnetto/YCM-Generator)
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)

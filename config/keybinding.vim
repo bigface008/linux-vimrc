@@ -7,8 +7,8 @@ nnoremap <C-\> :vs<Enter>
 " Keybindings for insert mode.
 inoremap <C-e> <Esc>A
 inoremap <C-a> <Esc>I
-inoremap <C-j> <Esc>ja
-inoremap <C-k> <Esc>ka
+" inoremap <C-j> <Esc>ja
+" inoremap <C-k> <Esc>ka
 inoremap <C-CR> <Esc>o
 inoremap <C-S-CR> <Esc>O
 
