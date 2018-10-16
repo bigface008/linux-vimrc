@@ -15,8 +15,8 @@ Plug 'Yggdroot/indentLine'
 " UI Themes
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
-Plug 'jnurmine/zenburn'
 " Complete
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'valloric/youcompleteme'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 " Plug 'shougo/neocomplete.vim'
@@ -69,6 +69,8 @@ let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar='·'
 
 " YouCompleteMe -------------------------------------------------------------- "
+" Since this part is relatived with autocomplete.
+set tags=./.tags;,.tags,tags,/home/dashi/workspace/lib_tags/tags
 let g:ycm_server_python_interpreter='/usr/bin/python2.7'
 let g:ycm_collect_identifiers_from_tags_files=1
 let g:ycm_confirm_extra_conf=1
@@ -153,7 +155,7 @@ let g:ycm_filetype_blacklist={
 " let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " Tagbar --------------------------------------------------------------------- "
-let g:tagbar_ctags_bin='ctags'
+let g:tagbar_ctags_bin='unctags'
 let g:tagbar_sort=0
 map <Leader><leader>t :TagbarToggle<CR>
 
@@ -198,9 +200,30 @@ map <leader>k <Plug>(easymotion-k)
 nnoremap <leader>o :LeaderfFunction<Enter>
 " let g:Lf_WindowHeight=0.30
 let g:Lf_CursorBlink = 0
+let g:Lf_Ctags="unctags"
 let g:Lf_StlColorscheme = 'molokai'
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
+let g:Lf_ReverseOrder = 1
 let g:Lf_WildIgnore = {
         \ 'dir': ['.svn','.git','.hg'],
-        \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+        \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]','*.pdf'
+        \ ,'*.pptx','*.docx','*.zip','*.tar.gz','*.tgz','*.rar','*.xls','*.xlsx'
+        \ ,'*.doc','*.odt','*.db','*.dbc','*dat','*.deb','*.out','*.ppt','*.png'
+        \ ,'*.jpg']
         \}
+
+" vim-gutentags
+let g:gutentags_ctags_executable = 'unctags'
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
+let g:gutentags_ctags_tagfile = '.tags'
+let s:vim_tags = expand('~/workspace/cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
+endif
+

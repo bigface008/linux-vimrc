@@ -32,31 +32,44 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 [YouCompleteMe Linux安装手记](./docs/youcompleteme-linux-installation-note.md)
 
 ## Plugins List
-### [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+### Plugin Manager
+#### [vim-plug](https://github.com/junegunn/vim-plug)
 安装vim-plug命令
 
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-### [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
-### [tomasiser/vim-code-dark](https://github.com/tomasiser/vim-code-dark)
-### [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
-### [Yggdroot/LeaderF](https://github.com/Yggdroot/LeaderF)
-目前使用LeaderF来进行函数跳转、文件快速打开等工作。
-### junegunn/fzf.vim
-[fzf](https://github.com/junegunn/fzf)
-[fzf.vim](https://github.com/junegunn/fzf.vim)
-~~目前把ag作为默认命令，来排除.gitignore中的文件。但是尚未找到适合的搜索隐藏文件的方
-法。~~
-### [shougo/neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
-### [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
-目前尚不清楚如何让标识在行高亮情况下正常显示。
-### [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
-~~目前启用了[ag](https://github.com/ggreer/the_silver_searcher)来优化ctrlp打开速
-度。~~目前已经弃用。由fzf代替。
-### [majutsushi/tagbar](https://github.com/majutsushi/tagbar)
-### [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
-### [tpope/vim-surround](https://github.com/tpope/vim-surround)
-### [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
-### [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
-### [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-### [easymotion/vim-easymotion](https://github.com/easymotion/vim-easymotion)
+### File Tree
+- [nerdtree](https://github.com/scrooloose/nerdtree)
+### Status Line
+- [vim-airline](https://github.com/vim-airline/vim-airline)
+### Color Theme
+- [vim-code-dark](https://github.com/tomasiser/vim-code-dark)
+- [base16-vim](https://github.com/chriskempson/base16-vim)
+- [gruvbox](https://github.com/morhetz/gruvbox)
+### Navigator
+目前使用LeaderF来进行函数跳转、文件快速打开等工作。ag被用来加速LeaderF的文件搜索
+。其余插件处于停用或者未安装状态。
+
+- [LeaderF](https://github.com/Yggdroot/LeaderF)
+- [fzf](https://github.com/junegunn/fzf),[fzf.vim](https://github.com/junegunn/fzf.vim)
+- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
+- [ag](https://github.com/ggreer/the_silver_searcher)
+- [tagbar](https://github.com/majutsushi/tagbar)
+### Auto Complete
+目前仍然在艰难地尝试补全。
+
+- [youcompleteme](https://github.com/valloric/youcompleteme)
+- [YCM-Generator](https://github.com/rdnetto/YCM-Generator)
+- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
+- [neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
+### Git
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+### Better Editor
+目前尚不清楚如何让indentLine在行高亮情况下正常显示行首空格和缩进线。
+
+- [indentLine](https://github.com/Yggdroot/indentLine)
+- [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+- [vim-surround](https://github.com/tpope/vim-surround)
+- [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
+- [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+- [vim-easymotion](https://github.com/easymotion/vim-easymotion)
