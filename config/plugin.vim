@@ -85,8 +85,8 @@ let g:ycm_filetype_blacklist={
             \ 'tagbar' : 1,
             \ 'infolog' : 1,
             \}
-let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+" let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
+" let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
 
 " Tagbar --------------------------------------------------------------------- "
 let g:tagbar_ctags_bin='unctags'
@@ -146,7 +146,7 @@ endif
 let g:echodoc_enable_at_startup = 1
 
 " Ultisnips ------------------------------------------------------------------ "
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetDirectories=["~/.vim/plugged/vim-snippets/UltiSnips", "~/.vim/plugged/vim-snippets/snippets"]
