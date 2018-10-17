@@ -42,7 +42,11 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 ### File Tree
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 ### Status Line
+目前使用Lightline来代替Airline——因为我觉得Airline的Solarized颜色主题不大合适...
+lightline-bufferline是用来使用tabline来快速切换buffer的。
 - [vim-airline](https://github.com/vim-airline/vim-airline)
+- [lightline.vim](https://github.com/itchyny/lightline.vim)
+- [lightline-bufferline](https://github.com/mgee/lightline-bufferline)
 ### Color Theme
 - [vim-code-dark](https://github.com/tomasiser/vim-code-dark)
 - [base16-vim](https://github.com/chriskempson/base16-vim)
