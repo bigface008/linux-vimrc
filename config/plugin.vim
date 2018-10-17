@@ -12,14 +12,17 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/indentLine'
-" UI Themes
+" Color Themes
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
-" Complete
+" Auto Complete
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'valloric/youcompleteme'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'shougo/echodoc.vim'
 " Plug 'shougo/neocomplete.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 " Quick search
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -61,7 +64,7 @@ let g:ycm_add_preview_to_completeopt=0
 let g:ycm_min_num_identifier_candidate_chars=2
 " let g:ycm_autoclose_preview_window_after_completion=1
 set completeopt=menu,menuone
-let g:ycm_complete_in_strings=0
+let g:ycm_complete_in_strings=1
 let g:ycm_semantic_triggers =  {
             \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
             \ 'cs,lua,javascript': ['re!\w{2}'],
@@ -82,6 +85,8 @@ let g:ycm_filetype_blacklist={
             \ 'tagbar' : 1,
             \ 'infolog' : 1,
             \}
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
 
 " Tagbar --------------------------------------------------------------------- "
 let g:tagbar_ctags_bin='unctags'
@@ -137,3 +142,11 @@ if !isdirectory(s:vim_tags)
     silent! call mkdir(s:vim_tags, 'p')
 endif
 
+" echodoc -------------------------------------------------------------------- "
+let g:echodoc_enable_at_startup = 1
+
+" Ultisnips ------------------------------------------------------------------ "
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsSnippetDirectories=["~/.vim/plugged/vim-snippets/UltiSnips", "~/.vim/plugged/vim-snippets/snippets"]

@@ -13,10 +13,10 @@ inoremap <C-CR> <Esc>o
 inoremap <C-S-CR> <Esc>O
 
 " Move faster between windows.
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-l> <C-w>l
 
 " Move faster between tabs.
 noremap <M-f> :bn<Enter>

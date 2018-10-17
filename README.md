@@ -12,14 +12,14 @@
 不会捣鼓别人编译好的版本），造成了不得不使用Neocomplete\Deoplete的状况。但是，在
 Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 这使得Windows和Linux需要使用完全不同的补全工具，大大增加了同步的难度。
-- 目前算是初步安装了YouCompleteMe，然而发现没法调出Preview以及变量的类型，甚至没
-法不全头文件内的函数。似乎要配置的东西还有很多很多......
+- 目前算是初步安装了YouCompleteMe，然而只是配置了C系的补全......
 
 ## Installation
 1. 克隆本项目。
 2. 手动在$HOME/.vim路径下创建files/backup，files/undo，files/swap文件夹。
 3. 安装fonts中的字体。（在Linux下这基本没有必要，因为默认的Monospace挺好看的）
 4. 安装vim-plug。使用`PlugInstall`命令来安装所有插件（主题颜色已经包括其中）。
+5. 执行tags文件生成，YouCompleteMe安装相关的命令。
 
 ## Features
 1. C、JS的代码高亮和补全、语法提示、搜索替换和跳转。
@@ -29,7 +29,8 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 ## Documents
 目前尚无完整的文档计划，未来也许会在博客中进行文档编写工作。下面的文档仅是安装过
 程中的一些笔记。
-[YouCompleteMe Linux安装手记](./docs/youcompleteme-linux-installation-note.md)
+
+[Vim補完計画](./docs/vim-complete.md)
 
 ## Plugins List
 ### Plugin Manager
@@ -57,6 +58,7 @@ Linux下安装YouCompleteMe和Neocomplete比较方便，决定使用YouCompleteMe做主力补全。
 - [tagbar](https://github.com/majutsushi/tagbar)
 ### Auto Complete
 目前貌似是把C和C++的补全整好了一部分。
+
 - [youcompleteme](https://github.com/valloric/youcompleteme)
 - [YCM-Generator](https://github.com/rdnetto/YCM-Generator)
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
