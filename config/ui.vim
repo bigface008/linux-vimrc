@@ -2,8 +2,8 @@
 set nu                       " Show line number.
 " set relativenumber         " Set relative line number.
 set ruler                    " Set ruler.
-" set background=dark        " Set background.
-colorscheme molokai          " Set theme.
+set background=dark          " Set background.
+colorscheme NeoSolarized     " Set theme.
 let base16colorspace=256
 set termguicolors
 set cursorline               " Show line cursor.
@@ -39,6 +39,7 @@ if has("gui_running")
     set guioptions-=L        " Hide left scroll bar.
     set guioptions-=r        " Hide right scroll bar.
     set guioptions-=b        " Hide bottom scroll bar.
+    set guioptions-=e        " Hide tabline. (Thus show lightline tabline)
     set showtabline=0        " Hide tab line.
 endif
 
