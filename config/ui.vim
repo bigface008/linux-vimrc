@@ -2,7 +2,7 @@
 set nu                       " Show line number.
 " set relativenumber         " Set relative line number.
 set ruler                    " Set ruler.
-" set background=light       " Set background.
+" set background=dark        " Set background.
 colorscheme molokai          " Set theme.
 let base16colorspace=256
 set termguicolors
@@ -17,7 +17,8 @@ set cc=80                    " Hightlight column 80.
 " set guifont=Fira\ Code\ Regular\ 9
 " set guifont=Fantasque\ Sans\ Mono\ 11
 " set guifont=Consolas:h12
-set guifont=Monospace\ 9
+" set guifont=Monospace\ 9
+set guifont=Monaco\ 9
 
 " Set cursor type.
 " set gcr=a:block-blinkon0   " No flashing cursor.

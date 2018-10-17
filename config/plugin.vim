@@ -15,6 +15,7 @@ Plug 'Yggdroot/indentLine'
 " Color Themes
 Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 " Auto Complete
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'valloric/youcompleteme'
