@@ -3,7 +3,8 @@ set nu                       " Show line number.
 " set relativenumber         " Set relative line number.
 set ruler                    " Set ruler.
 set background=dark          " Set background.
-colorscheme NeoSolarized     " Set theme.
+colorscheme molokai     " Set theme.
+" colorscheme NeoSolarized     " Set theme.
 let base16colorspace=256
 set termguicolors
 set cursorline               " Show line cursor.

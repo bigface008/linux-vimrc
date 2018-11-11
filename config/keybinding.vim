@@ -6,12 +6,17 @@ inoremap <C-e> <Esc>A
 inoremap <C-a> <Esc>I
 " inoremap <C-j> <Esc>ja
 " inoremap <C-k> <Esc>ka
-inoremap <C-CR> <Esc>o
-inoremap <C-S-CR> <Esc>O
+" inoremap <C-c><C-c> <Esc>o
+" inoremap <C-c> <Esc>O
+" inoremap <C-CR> <Esc>o
+" inoremap <C-S-CR> <Esc>O
 
 " Move faster between buffers.
-" noremap <M-f> :bn<Enter>
-" noremap <M-b> :bp<Enter>
+noremap <leader>n :bn<Enter>
+noremap <leader>p :bp<Enter>
+
+" Terminal
+noremap <C-`> :terminal<Enter>
 
 " Fullscreen function binding. Only can be used when wmctrl is installed.
 let g:fullscreen = 0

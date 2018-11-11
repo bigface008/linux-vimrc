@@ -24,16 +24,17 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'valloric/youcompleteme'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'shougo/echodoc.vim'
-" Plug 'shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Quick search
-" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Git
 Plug 'airblade/vim-gitgutter'
+" Syntax
+" Plug 'kien/rainbow_parentheses.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
 " Other
 Plug 'iamcco/markdown-preview.vim'
 call plug#end()
@@ -44,8 +45,8 @@ call plug#end()
 
 " Lightline ------------------------------------------------------------------ "
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
+            \ 'colorscheme': 'molokai',
+            \ }
 let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
@@ -66,7 +67,7 @@ nmap <Leader>0 <Plug>lightline#bufferline#go(10)
 let NERDTreeShowHidden=1
 let NERDTreeWinPos='left'    " Postion of nerdtree
 let NERDTreeWinSize=30       " Size of nerdtree
-map <Leader><leader>n :NERDTreeToggle<CR> " Shortcut for open nerdtree
+map <leader><leader>e :NERDTreeToggle<CR> " Shortcut for open nerdtree
 
 " IndentLine ----------------------------------------------------------------- "
 let g:indentLine_enabled=1   " Settings for indentLine
@@ -140,7 +141,7 @@ nnoremap <leader>o :LeaderfFunction<Enter>
 " let g:Lf_WindowHeight=0.30
 let g:Lf_CursorBlink = 0
 let g:Lf_Ctags="unctags"
-let g:Lf_StlColorscheme = 'solarized'
+let g:Lf_StlColorscheme = 'molokai'
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 let g:Lf_ReverseOrder = 1
 let g:Lf_WildIgnore = {
@@ -158,7 +159,7 @@ let g:gutentags_ctags_tagfile = '.tags'
 let s:vim_tags = expand('~/workspace/cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args = ['--fields=+lniazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
@@ -174,3 +175,8 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetDirectories=["~/.vim/plugged/vim-snippets/UltiSnips", "~/.vim/plugged/vim-snippets/snippets"]
+
+" vim-cpp-enhanced-highlight ------------------------------------------------- "
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+
