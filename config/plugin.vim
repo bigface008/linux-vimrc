@@ -7,18 +7,20 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 " UI
-Plug 'itchyny/lightline.vim'
-Plug 'mgee/lightline-bufferline'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+" Plug 'itchyny/lightline.vim'
+" Plug 'mgee/lightline-bufferline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/indentLine'
 " Color Themes
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
 Plug 'icymind/neosolarized'
-Plug 'KabbAmine/yowish.vim'
+" Plug 'KabbAmine/yowish.vim'
+" Plug 'cormacrelf/vim-colors-github'
+" Plug 'joshdick/onedark.vim'
 " Auto Complete
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'valloric/youcompleteme'
@@ -40,28 +42,28 @@ Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 
 " Airline -------------------------------------------------------------------- "
-" let g:airline_theme='molokai'        " Theme of airline
-" let g:airline#extensions#tabline#enabled=1 " Enable bufferline.
+" let g:airline_theme='gruvbox'        " Theme of airline
+let g:airline#extensions#tabline#enabled=1 " Enable bufferline.
 
 " Lightline ------------------------------------------------------------------ "
-let g:lightline = {
-            \ 'colorscheme': 'molokai',
-            \ }
-let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type   = {'buffers': 'tabsel'}
-let g:lightline#bufferline#show_number=2
-let g:lightline#bufferline#min_buffer_count=1
-nmap <Leader>1 <Plug>lightline#bufferline#go(1)
-nmap <Leader>2 <Plug>lightline#bufferline#go(2)
-nmap <Leader>3 <Plug>lightline#bufferline#go(3)
-nmap <Leader>4 <Plug>lightline#bufferline#go(4)
-nmap <Leader>5 <Plug>lightline#bufferline#go(5)
-nmap <Leader>6 <Plug>lightline#bufferline#go(6)
-nmap <Leader>7 <Plug>lightline#bufferline#go(7)
-nmap <Leader>8 <Plug>lightline#bufferline#go(8)
-nmap <Leader>9 <Plug>lightline#bufferline#go(9)
-nmap <Leader>0 <Plug>lightline#bufferline#go(10)
+" let g:lightline = {
+"             \ 'colorscheme': 'molokai',
+"             \ }
+" let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+" let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+" let g:lightline.component_type   = {'buffers': 'tabsel'}
+" let g:lightline#bufferline#show_number=2
+" let g:lightline#bufferline#min_buffer_count=1
+" nmap <Leader>1 <Plug>lightline#bufferline#go(1)
+" nmap <Leader>2 <Plug>lightline#bufferline#go(2)
+" nmap <Leader>3 <Plug>lightline#bufferline#go(3)
+" nmap <Leader>4 <Plug>lightline#bufferline#go(4)
+" nmap <Leader>5 <Plug>lightline#bufferline#go(5)
+" nmap <Leader>6 <Plug>lightline#bufferline#go(6)
+" nmap <Leader>7 <Plug>lightline#bufferline#go(7)
+" nmap <Leader>8 <Plug>lightline#bufferline#go(8)
+" nmap <Leader>9 <Plug>lightline#bufferline#go(9)
+" nmap <Leader>0 <Plug>lightline#bufferline#go(10)
 
 " NerdTree ------------------------------------------------------------------- "
 let NERDTreeShowHidden=1
@@ -141,7 +143,7 @@ nnoremap <leader>o :LeaderfFunction<Enter>
 " let g:Lf_WindowHeight=0.30
 let g:Lf_CursorBlink = 0
 let g:Lf_Ctags="unctags"
-let g:Lf_StlColorscheme = 'molokai'
+let g:Lf_StlColorscheme = 'gruvbox'
 let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 let g:Lf_ReverseOrder = 1
 let g:Lf_WildIgnore = {
@@ -180,3 +182,5 @@ let g:UltiSnipsSnippetDirectories=["~/.vim/plugged/vim-snippets/UltiSnips", "~/.
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 
+" Github Theme
+let g:github_colors_soft = 1

@@ -2,9 +2,8 @@
 set nu                       " Show line number.
 " set relativenumber         " Set relative line number.
 set ruler                    " Set ruler.
-set background=dark          " Set background.
-colorscheme molokai     " Set theme.
-" colorscheme NeoSolarized     " Set theme.
+set background=light         " Set background.
+colorscheme gruvbox          " Set theme.
 let base16colorspace=256
 set termguicolors
 set cursorline               " Show line cursor.
@@ -19,7 +18,7 @@ set cc=80                    " Hightlight column 80.
 " set guifont=Fantasque\ Sans\ Mono\ 11
 " set guifont=Consolas:h12
 " set guifont=Monospace\ 9
-set guifont=Monaco\ 9
+set guifont=Monaco\ 11
 
 " Set cursor type.
 " set gcr=a:block-blinkon0   " No flashing cursor.
@@ -33,6 +32,8 @@ set listchars=tab:>\ ,trail:.,extends:>,precedes:<,nbsp:.
 
 " GUI config
 if has("gui_running")
+    " colorscheme github
+    " let g:lightline={'colorscheme':'github'}
     set lines=1000
     set columns=1000
     set guioptions-=m        " Hide menu bar.

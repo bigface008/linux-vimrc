@@ -8,12 +8,20 @@ inoremap <C-a> <Esc>I
 " inoremap <C-k> <Esc>ka
 " inoremap <C-c><C-c> <Esc>o
 " inoremap <C-c> <Esc>O
-" inoremap <C-CR> <Esc>o
-" inoremap <C-S-CR> <Esc>O
+inoremap <C-CR> <Esc>o
+inoremap <C-S-CR> <Esc>O
+inoremap <C-z> <Esc>ua
+
+nnoremap j gj
+nnoremap k gk
+nnoremap <leader>s :w<Enter>
 
 " Move faster between buffers.
 noremap <leader>n :bn<Enter>
 noremap <leader>p :bp<Enter>
+
+" Global string searching.
+nnoremap <C-S-F> :Lines<Enter>
 
 " Terminal
 noremap <C-`> :terminal<Enter>
