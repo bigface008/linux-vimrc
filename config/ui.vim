@@ -2,8 +2,8 @@
 set nu                       " Show line number.
 " set relativenumber         " Set relative line number.
 set ruler                    " Set ruler.
-set background=light         " Set background.
-colorscheme gruvbox          " Set theme.
+set background=dark          " Set background.
+colorscheme NeoSolarized     " Set theme.
 let base16colorspace=256
 set termguicolors
 set cursorline               " Show line cursor.
@@ -34,8 +34,8 @@ set listchars=tab:>\ ,trail:.,extends:>,precedes:<,nbsp:.
 if has("gui_running")
     " colorscheme github
     " let g:lightline={'colorscheme':'github'}
-    set lines=1000
-    set columns=1000
+    set lines=40
+    set columns=180
     set guioptions-=m        " Hide menu bar.
     set guioptions-=T        " Hide tool bar.
     set guioptions-=L        " Hide left scroll bar.

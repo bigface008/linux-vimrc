@@ -21,7 +21,7 @@ noremap <leader>n :bn<Enter>
 noremap <leader>p :bp<Enter>
 
 " Global string searching.
-nnoremap <C-S-F> :Lines<Enter>
+nnoremap <leader>F :Lines<Enter>
 
 " Terminal
 noremap <C-`> :terminal<Enter>
